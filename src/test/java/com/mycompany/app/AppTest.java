@@ -33,6 +33,7 @@ public class AppTest
     public void testAppMain()
     {
         App.main(null);
+        fail("Construction failed.");
         try {
             assertEquals("Hello World!" + System.getProperty("line.separator"), outContent.toString());
         } catch (AssertionError e) {
